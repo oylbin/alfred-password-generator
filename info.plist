@@ -27,6 +27,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>D8DE923F-CB88-4B6B-906C-24CC97601A96</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B75B672E-856B-4B0F-9E56-0F91790D0939</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>oylbin</string>
@@ -38,21 +49,6 @@
 	<string>生成随机密码</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>3CDE5696-C922-4966-8DDC-8661B96C20D3</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -93,6 +89,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>3CDE5696-C922-4966-8DDC-8661B96C20D3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -106,6 +117,44 @@
 			<string>alfred.workflow.output.script</string>
 			<key>uid</key>
 			<string>038F4210-638E-4D30-B482-CC1E97E12864</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>passclear</string>
+				<key>text</key>
+				<string>clear generated passwords</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D8DE923F-CB88-4B6B-906C-24CC97601A96</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python password_clear.py</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>B75B672E-856B-4B0F-9E56-0F91790D0939</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -132,6 +181,16 @@
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>B75B672E-856B-4B0F-9E56-0F91790D0939</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>D8DE923F-CB88-4B6B-906C-24CC97601A96</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
